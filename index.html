@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Galeria de Arte Interativa</title>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Arte Interativa</h1>
+        <input type="text" placeholder="Buscar obra..." id="campo-pesquisa">
+        <button onclick="pesquisar()">Pesquisar</button>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li onclick="filtrar('pintura')">Pintura</li>
+                <li onclick="filtrar('escultura')">Escultura</li>
+                <li onclick="filtrar('fotografia')">Fotografia</li>
+                <li onclick="exibirFavoritos()">Favoritos</li>
+            </ul>
+        </nav>
+
+        <section id="inicio">
+
+        </section>
+
+        <section class="galeria" id="galeria">
+            <!-- Obras de arte serão exibidas aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - Desenvolvido por Emerson Da Costa Nogueira</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
